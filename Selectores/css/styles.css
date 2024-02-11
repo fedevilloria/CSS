@@ -1,9 +1,41 @@
 /* 
     Selectores simples
         Selectores elementales
+            Selector Universal -> *
+            Selector de tipo o etiqueta -> Nombre de la etiqueta
         Selectores de atributo
+            id -> Id del elemento
+            clase -> Clase del elemento
+            Otros atributos
     Selectores compuestos
         Selectores agrupados
         Selectores combinadores
         Pseudoclases y Pseudoelementos
 */
+
+*{ /* Selector Universal */
+    background-color: darkkhaki;
+}
+
+h1{ /* Selector de tipo o etiqueta */
+    background-color: aquamarine;
+}
+
+p{ /* Selector de tipo o etiqueta */
+    background-color: beige;
+}
+
+
+/* Selectores de atributos */
+
+#title{ /* No es muy recomendable hacer esto ya que CSS puede reutilizar sus disenos */
+    background-color: gainsboro;
+}
+
+.title{
+    background-color: rosybrown;
+}
+
+.text{
+    background-color: lightcoral;
+}
