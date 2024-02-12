@@ -8,14 +8,17 @@
             clase -> Clase del elemento
             Otros atributos
                 [atributo]
-                [atributo = valor]
-                [atributo^ = valor] Esto lo que hace es comprobar si empieza por ese valor
-                [atributo* = valor] Esto lo que conseguimos es que coincida el valor dependiendo de donde este
-                [atributo$ = valor] Esto lo que hace es cuando termina con el mismo valor que le damos
-                [atributo| = valor] Este sirve mas que nada para el language
+                [atributo = valor] Esto lo que hace es comparar si el valor es el mismo para realizar el cambio.
+                [atributo^ = valor] Esto lo que hace es comprobar si empieza por ese valor.
+                [atributo* = valor] Esto lo que conseguimos es que coincida el valor dependiendo de donde este.
+                [atributo$ = valor] Esto lo que hace es cuando termina con el mismo valor que le damos.
+                [atributo| = valor] Este sirve mas que nada para el language.
+    
     Selectores compuestos
         Selectores agrupados
+            Se agrupan los selectores separados por comas y se escribe el estilo una sola vez.
         Selectores combinadores
+            Selector descendiente
         Pseudoclases y Pseudoelementos
 */
 
@@ -47,7 +50,7 @@ p{  Selector de tipo o etiqueta
 .text{
     background-color: lightcoral;
 }
-*/
+
 
 [href]{
     background-color: beige;
@@ -72,3 +75,21 @@ p{  Selector de tipo o etiqueta
 [lang|="en"]{
     background-color: chocolate;
 }
+*/
+
+/*
+    Selectores Agrupados
+.text,
+.text-2,
+.text-3,
+.text-4{
+    background-color: thistle;
+}
+*/
+
+/* Selectores Combinadores - Las buenas practicas indican que solo es recomendable bajar un nivel o que hayan solo dos argumentos.
+Esto tambien se le dice seleccionar a los hijos.
+div .title-2{
+    background-color: tomato;
+}
+*/
