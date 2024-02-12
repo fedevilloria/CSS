@@ -7,28 +7,36 @@
             id -> Id del elemento
             clase -> Clase del elemento
             Otros atributos
+                [atributo]
+                [atributo = valor]
+                [atributo^ = valor] Esto lo que hace es comprobar si empieza por ese valor
+                [atributo* = valor] Esto lo que conseguimos es que coincida el valor dependiendo de donde este
+                [atributo$ = valor] Esto lo que hace es cuando termina con el mismo valor que le damos
+                [atributo| = valor] Este sirve mas que nada para el language
     Selectores compuestos
         Selectores agrupados
         Selectores combinadores
         Pseudoclases y Pseudoelementos
 */
 
-*{ /* Selector Universal */
+/*
+Selector Universal
+*{
     background-color: darkkhaki;
 }
 
-h1{ /* Selector de tipo o etiqueta */
+h1{ Selector de tipo o etiqueta
     background-color: aquamarine;
 }
 
-p{ /* Selector de tipo o etiqueta */
+p{  Selector de tipo o etiqueta 
     background-color: beige;
 }
 
 
-/* Selectores de atributos */
+ Selectores de atributos 
 
-#title{ /* No es muy recomendable hacer esto ya que CSS puede reutilizar sus disenos */
+#title{ No es muy recomendable hacer esto ya que CSS puede reutilizar sus disenos
     background-color: gainsboro;
 }
 
@@ -38,4 +46,29 @@ p{ /* Selector de tipo o etiqueta */
 
 .text{
     background-color: lightcoral;
+}
+*/
+
+[href]{
+    background-color: beige;
+}
+
+[href="https://google.com"]{
+    background-color: aquamarine;
+}
+
+[href^="color"]{
+    background-color: brown;
+}
+
+[href*="modo"]{
+    background-color: cadetblue;
+}
+
+[href$="rojo"]{
+    background-color: blueviolet;
+}
+
+[lang|="en"]{
+    background-color: chocolate;
 }
