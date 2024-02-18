@@ -19,6 +19,9 @@
             Se agrupan los selectores separados por comas y se escribe el estilo una sola vez.
         Selectores combinadores
             Selector descendiente
+            Selector de hermano siguiente (+) - (Los hermanos se guian en base a la identacion, si estan al mismo nivel son hermanos, si estan mas adelante serian los hijos y si hay una identacion anterior seria el padre.)
+            Selector de hermanos siguientes (~) - (Selecciona a todos los hermanos que estan por debajo.)
+            Selector de hijos directos (>) - (Selecciona aquellos hijos que sean directos y no nietos.)
         Pseudoclases y Pseudoelementos
 */
 
@@ -93,3 +96,19 @@ div .title-2{
     background-color: tomato;
 }
 */
+
+/* Selectores de hermanos 
+
+.text-2 + .title-2{ - Solo se puede seleccionar al siguiente hermano.
+
+    background-color: lightgreen;
+}
+
+.text-2 ~ p{ - Se puede seleccionar a todos los hermanos que estan por debajo.
+    background-color: lightseagreen;
+}
+*/
+
+.container > p{
+    background-color:aqua;
+}
