@@ -19,3 +19,18 @@ body{
     background-color: #333;
     color: #fff;
 }
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+    color: #000;
+    overflow: auto; /* Lo mas comun es que se utilice asi, pero tambien se puede ver: overflow-y: auto; */
+}
+
+.text{
+    width: 350px;
+}
